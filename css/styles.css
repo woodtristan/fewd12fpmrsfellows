@@ -1,0 +1,142 @@
+html{
+	box-sizing: border-box;
+}
+*,
+*:before;
+*:after {
+	box-sizing: inherit;
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body{
+	font-family: Oswald, sans-serif;
+	color: #414143;
+}
+
+.wrapper{
+	margin: 0 auto;
+	padding: 3em;
+	width: 80%;
+}
+
+h1{
+	font-size: 54px;
+	padding-bottom: .5em;
+}
+
+.logo{
+	font-weight: bold;
+}
+
+nav ul li {
+     float:left;
+}
+
+     nav ul li a {
+          display:block;
+          color:#414143;
+          padding: 20px 20px 5px 0px;
+          text-decoration: none;
+     }
+
+     nav ul li a:hover {
+           color:#208C7C;
+     }
+
+.carousel{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.carousel img{
+	width: 100%;
+}
+
+ .tout{
+  	width: 30%;
+ 	height: 150px;
+  	display: block;
+  	padding: 15px;
+  	float: left;
+}
+
+h2{
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: .5em;
+}
+
+.tout a{
+	text-decoration: none;
+}
+
+.tout a:hover {
+	 color: #208C7C;
+}
+
+footer{
+	margin-top: 2em;
+	clear: both;
+}
+.augsLogo{
+	width: 20%;
+	margin-right: 1em;
+	float: left;
+	clear: both;
+}
+
+footer p{
+	vertical-align: bottom;
+}
+
+.socialMedia{
+	float:right;
+	padding-left: 5px;
+}
+
+#calendar{
+	margin: 1em;
+}
+
+/*ALL PAGES
+
+apply fonts to all text 
+
+header - float logo left
+
+align tagline next to tagline
+
+create spacing for navigation
+apply font to navigation items
+apply style to navigation items when clicked
+
+apply fonts to footer text
+
+Mobile only:
+- resize logo
+- hide navigation
+
+HOMPAGE:
+size rotating banner
+float boxes
+
+Mobile only:
+- remove rotating banner
+- change float on boxes
+- change width of boxes
+
+PAGE 2
+- style form
+*/
