@@ -7,40 +7,80 @@
 	<title>FPMRS Fellows</title>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oswald:400,700|Merriweather:700,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="js/plugins/slick/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="js/plugins/slick/slick/slick-theme.css"/>	
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 <div class="wrapper">
-	<header class="clearfix">
+		<header class="cf">
 		<h1><span class="logo">FPMRS</span>Fellows</h1>
-		<nav>
-			<ul>
-				<li><a href="#">AUGS</a></li>
-				<li><a href="#">Fellowships</a></li>
-				<li><a href="#">Education</a></li>
-				<li><a href="#">Resources</a></li>
-				<li><a href="#">Community</a></li>
+
+		<a href="#" class="mobile-only hamburger">&#9776;</a>
+
+		<nav class="desktop-only navigation">
+			<ul class=>
+				<li class="dropdown"><a href="#">AUGS</a></li>
+				<li class="dropdown"><a href="#">Fellowships</a></li>
+				<li class="dropdown"><a href="#">Education</a></li>
+				<li class="dropdown" ><a href="#">Resources</a></li>
+				<li class="dropdown" ><a href="#">Community</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<div>
-	<p>AUGS members are invited to submit a description and interview dates of an ACGME fellowship program. AUGS is not responsible for the content or authenticity of these postings.</p>
+	<div class="intro">
+	<h1>Fellowship Program Information Submission</h1></br>
+	<p>AUGS members are invited to submit a description and interview dates of an ACGME fellowship program. AUGS is not responsible for the content or authenticity of these postings.</p></br>
 
-	<p><a href="#">Use our calendar</a> to view 2015 interview dates that have been made available to AUGS.</p></div>
+	<p><a href="http://woodtristan.github.io/fewd12fpmrsfellows/page3index">Use our calendar</a> to view 2015 interview dates that have been made available to AUGS.</p></div>
 
-	<form>
-		<input>Fellowship Program Name</input>
-		<input>Fellowship Coordinator</input>
-		<input>Phone Number</input>
-		<input>Email Address</input>
-		<input>City</input>
-		<input>State</input>
-		<input>Interview Dates</input>
-		<input>Upload a description</input>
+	<form action="formdata.php" method="post" enctype="multipart/form-data">
+		<div class="form">
+			<label for="fellowshipProgram">Fellowship Program Name</label>
+			<input type="text" name="fellowshipProgram" id="fellowshipProgram" placeholder="Fellowship Program Name">
+		</div>
+
+		<div class="form">
+			<label for="fellowshipCoordinator">Fellowship Coordinator</label>
+			<input type="text" name="fellowshipCoordinator" id="fellowshipCoordinator" placeholder="Fellowship Coordinator">
+		</div>
+
+		<div class="form">
+			<label for="phoneNumber">Phone Number</label>
+			<input type="tel" size="3" maxlength="3" name="phoneNumber" id="phoneNumber"> &mdash; 
+			<input type="tel" size="3" maxlength="3" name="phoneNumber2" id="phoneNumber2"> &mdash;
+			<input type="tel" size="4" maxlength="4" name="phoneNumber3" id="phoneNumber3"> 
+		</div>	
+
+		<div class="form">
+			<label for="email">Email Address</label>
+			<input type="email" name="email" id="email" placeholder="Email Address">
+		</div>
+		
+		<div class="form">
+			<label for="city">City</label>
+			<input type="text" name="city" id="city" placeholder="City">
+		</div>
+
+		<div class="form">
+			<label for="state">State</label>
+			<input type="text" name="state" id="state" placeholder="State">
+		</div>
+
+		<div class="form">
+			<label for="interviewDates">Interview Dates</label>
+			<input type="text" name="interviewDates" id="interviewDates" placeholder="Interview Dates">
+		</div>
+
+		<div class="form">
+			<label for="fileUpload">Upload your Fellowship Program description.</label>
+			<input type="file" name="fileUpload" id="fileUpload">
+		</div>
+		
+		<div class="form">
+			<input type="submit" value="Submit" name="submit" id="submit">
+		</div>
+
 	</form>
 
 

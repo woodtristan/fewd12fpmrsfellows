@@ -1,13 +1,8 @@
-html{
-	box-sizing: border-box;
-}
-*,
-*:before;
-*:after {
-	box-sizing: inherit;
-}
+html {box-sizing: border-box;}
 
-.clearfix:after {
+*, *:before, *:after {box-sizing: inherit;}
+
+.cf:after {
      content: ".";
      display: block;
      clear: both;
@@ -27,17 +22,31 @@ body{
 
 .wrapper{
 	margin: 0 auto;
-	padding: 3em;
 	width: 80%;
 }
 
-h1{
+header{
+	background: #414143;
+	color: #31AB54;
+	padding: 10px;
+}
+
+header h1{
 	font-size: 54px;
-	padding-bottom: .5em;
+	padding-bottom: .25em;
 }
 
 .logo{
 	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+	color: #31AB54;
+}
+
+a:hover {
+	 color: #135F9B;
 }
 
 nav ul li {
@@ -45,16 +54,10 @@ nav ul li {
 }
 
      nav ul li a {
-          display:block;
-          color:#414143;
-          padding: 20px 20px 5px 0px;
-          text-decoration: none;
+         padding: 20px 30px 5px 0px;
      }
 
-     nav ul li a:hover {
-           color:#208C7C;
-     }
-
+     
 .carousel{
 	width: 100%;
 	margin: 0 auto;
@@ -65,34 +68,53 @@ nav ul li {
 }
 
  .tout{
-  	width: 30%;
- 	height: 150px;
-  	display: block;
-  	padding: 15px;
-  	float: left;
+  	width: 33%;
+  	background: rgba(49,171,84,.25);
+  	height: 33%;
+  	display: inline-block;
+  	padding: 10px;
+  	margin-top: .5%;
+  	margin-right: .5%;
+  	
+}
+
+.tout:last-of-type{
+	margin-right: 0;
+}
+
+.tout-left{
+	float: left;
+}
+
+.tout-right{
+	
+	float: right;
 }
 
 h2{
 	font-size: 20px;
 	font-weight: bold;
 	padding-bottom: .5em;
+	text-align: center;
 }
 
-.tout a{
-	text-decoration: none;
-}
-
-.tout a:hover {
-	 color: #208C7C;
+.button{
+	background: #414143;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
 }
 
 footer{
-	margin-top: 2em;
-	clear: both;
+	overflow: auto;
+	padding: 10px;
 }
+
 .augsLogo{
 	width: 20%;
-	margin-right: 1em;
+	margin-right: 2em;
 	float: left;
 	clear: both;
 }
@@ -110,33 +132,67 @@ footer p{
 	margin: 1em;
 }
 
-/*ALL PAGES
+.hamburger{
+	text-decoration: none;
+	width: 16.67%;
+	float: left;
+}
 
-apply fonts to all text 
+.mobile-only {
+	display: none;
+}
 
-header - float logo left
+/*Page 2 Styles*/
+.intro{
+	margin: .5%;
+	padding: .5%;
+}
 
-align tagline next to tagline
+h1{
+	font-size: 28px;
+}
 
-create spacing for navigation
-apply font to navigation items
-apply style to navigation items when clicked
+.form{
+	padding: 10px;
+}
 
-apply fonts to footer text
+#submit{
+	background: #414143;
+	text-align: center;
+	display: inline-block;
+	width: 30%;
+	padding: 10px;
+	border-radius: 10px;
+	font-family: Oswald;
+	font-size: 20px;
+	color: #31AB54;
+}
 
-Mobile only:
-- resize logo
-- hide navigation
+/*Mobile Styles*/
+@media screen and (max-width:622px){
+	.desktop-only {
+		display: none;
+		width: auto;
+        float: none;
+	}
 
-HOMPAGE:
-size rotating banner
-float boxes
+	.mobile-only {
+		display: inline-block;
+	}
 
-Mobile only:
-- remove rotating banner
-- change float on boxes
-- change width of boxes
+	.dropdown{
+		display: block;
+		width: 100%;
+        text-align: left;
+        padding:10px;
+	}
 
-PAGE 2
-- style form
-*/
+	.tout{
+		display: block;
+		width: 100%;
+		float: none;
+	}
+
+}
+
+
