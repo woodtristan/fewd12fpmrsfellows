@@ -22,7 +22,7 @@ body{
 
 .wrapper{
 	margin: 0 auto;
-	width: 80%;
+	width: 90%;
 }
 
 header{
@@ -180,6 +180,11 @@ h1{
 		display: inline-block;
 	}
 
+	header h1{
+		font-size: 36px;
+		padding-bottom: .25em;
+	}
+
 	.dropdown{
 		display: block;
 		width: 100%;
@@ -192,6 +197,20 @@ h1{
 		width: 100%;
 		float: none;
 	}
+
+	.augsLogo{
+		display: none;
+	}
+
+	footer p{
+		font-size: 12px;
+	}
+
+	.socialMedia{
+		width: 10%;
+		float:right;
+		padding-left: 3px;
+}
 
 }
 

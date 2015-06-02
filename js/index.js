@@ -4,7 +4,7 @@
  	});
 
  	$('.hamburger').on('click', function() {
-		$('.navigation').slideToggle();
+		$('.navigation').slideToggle("slow");
 	}
 	);
 	
